@@ -1,0 +1,10 @@
+<h1>My Thoughts</h1>
+<button class = 'additional' ng-click="$ctrl.showForm()">New Thought</button>
+<div class="new">
+    <section>
+        
+    <post ng-repeat = "thoughts in $ctrl.social" post = "thoughts"></post>
+    <post-form ng-if="$ctrl.show === true" on-submit="$ctrl.addPost"></post-form>
+                                                
+    </section>
+</div>
